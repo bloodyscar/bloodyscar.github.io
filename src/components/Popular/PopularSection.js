@@ -54,7 +54,7 @@ function PopularSection() {
                 <div className="flex -mx-4 flex-row relative">
                     {
                         items.map((item, index) => (
-                            <ItemPopular key={index}  img={item.img} name={item.name} rate={item.rate} delayInMS={index * 700 }/>
+                            <ItemPopular key={index}  img={item.img} name={item.name} rate={item.rate} delayInMS={index * 300 }/>
                         ))
                     }
                 </div>

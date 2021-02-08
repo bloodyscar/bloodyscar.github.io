@@ -5,21 +5,6 @@ import Button from '../../elements/Button'
 import LinkItems from '../Navbar/LinkItems'
 import './Navbar.css'
 
-const items = [
-    {
-        title: 'Recipes'
-    },
-    {
-        title: 'Chef'
-    },
-    {
-        title: 'Beverages'
-    },
-    {
-        title: 'Food'
-    },
-]
-
 export default function Navbar(props) {
     const[isOpen, setIsOpen] = useState(false);
     
@@ -54,17 +39,7 @@ export default function Navbar(props) {
                     <div>
                     
                         <ul className={`${isOpen ? 'nav-menu active' : 'nav-menu'} md:flex  md:items-center mt-4`} id="list">
-                            {
-                                items.map((item, index) => {
-                                    return (
-                                        <div key={index}>
-                                            <LinkItems classList={`hover:underline py-3`} anchor={`px-6 text-white`} link={`/`}>
-                                                {item.title}
-                                            </LinkItems>
-                                        </div>
-                                    )
-                                })
-                            }
+                            <LinkItems />
                             <Button className={`ml-3 py-3 px-6 bg-white hover:bg-gray-100 rounded-lg`}>
                             Login
                         </Button>

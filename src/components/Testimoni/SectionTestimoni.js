@@ -1,11 +1,11 @@
 import React from 'react'
 import imgTesti from '../../images/content/testi.jpg'
-import Flip from 'react-reveal/Flip';
+import Bounce from 'react-reveal/Bounce';
 
 function SectionTestimoni() {
     return (
         <section className="w-full flex justify-center items-center py-24">
-            <Flip left delay={300}>
+            <Bounce bottom delay={800}>
             <div className="shadow-lg rounded-xl overflow-hidden transform rotate-1 hover:rotate-0 duration-200">
                 <div className="relative px-4 py-2 md:px-12 md:py-6">
                     
@@ -34,7 +34,7 @@ function SectionTestimoni() {
                     </div>
                 </div>
             </div>
-            </Flip>
+            </Bounce>
         </section>
 
     )
