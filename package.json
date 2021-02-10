@@ -1,6 +1,6 @@
 {
-  "home": "https://bloodyscar.github.io/reactjs-tailwind_recipexp-website",
-  "name": "my-project",
+  "home": "https://bloodyscar.github.io/recipexp_reactjs-tailwind",
+  "name": "recipexp_reactjs-tailwind",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
