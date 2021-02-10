@@ -1,0 +1,17 @@
+@media screen and (max-width: 768px){
+    .footer-menu{
+        height: 0px;
+        transition: all 0.5s ease-out;
+        opacity: 1;
+        position: relative;
+        left: -100%;
+
+    }
+
+    .footer-menu.active{
+        height: 100px;
+        transition: all 0.5s ease-out;
+        opacity: 1;
+        left: 0;
+    }
+}
